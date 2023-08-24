@@ -95,3 +95,11 @@ body{
 .midias a:hover{
     font-size: 32px;
 }
+
+/* Media query para telas menores que 900px */
+@media (max-width: 900px) {
+    body {
+        font-size: 14px;
+    }
+}
+/**/
