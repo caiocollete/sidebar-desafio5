@@ -27,7 +27,7 @@ body{
 
     font-size: 0px;
 
-    transition: width 1s;
+    transition: width 0.3s;
     transition: font-size 0.3s;
 }
 
@@ -51,4 +51,47 @@ body{
 .icons:hover{
     font-size: 36px;
 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.creditos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 50px;
+    font-size: 80px;
+}
+
+.creditos p{
+    font-size: 14px;
+}
+
+.creditos p a{
+    text-decoration: underline;
+}
+
+.midias{
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+
+    margin: 10px;
+
+    font-size: 28px;
+    transition: font-size 0.3s;
+}
+
+.midias a{
+    margin: 10px;
+}
+
+
+.midias a:hover{
+    font-size: 32px;
 }
