@@ -10,8 +10,9 @@ body{
     background-color: #ffffff7a;
 }
 
+/**/
 .sidebar{
-    width: 56px;
+    width: 64px;
     height: 100vh;
     
     position: absolute;
@@ -21,25 +22,27 @@ body{
     box-shadow: #000000;
     box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.25);
 
+    font-size: 0px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    font-size: 0px;
 
     transition: width 0.3s;
     transition: font-size 0.3s;
 }
 
-.sidebar:hover{
-    width: 72px;
-    font-size: 10px;
-}
-
-.menu{
+.sidebar div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.format:hover{
+    background-color: rgba(173, 173, 173, 0.15);
+    padding: 4px 0px;
 }
 
 .icons{
@@ -49,10 +52,41 @@ body{
 }
 
 .icons:hover{
-    font-size: 36px;
+    font-size: 32px;
 
 }
 
+.menu{
+    margin-top: auto;
+}
+
+/**/
+
+/* ACCESSIBILITY */
+  .accessibility {
+    font-size: 10px;
+
+    position: absolute;
+    transform: translate(0%, 20%) translateX(100%) translateY(100%);
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+
+    padding: 4px 8px;
+    border-radius: 4px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+  .format:hover .accessibility {
+    opacity: 1;
+    visibility: visible;
+  }
+/**/
+
+/**/
 .container{
     display: flex;
     justify-content: center;
@@ -95,6 +129,7 @@ body{
 .midias a:hover{
     font-size: 32px;
 }
+/**/
 
 /* Media query para telas menores que 900px */
 @media (max-width: 900px) {
