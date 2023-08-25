@@ -12,4 +12,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto consiste em uma sidebar minimalista, feita para o desafio da semana 5 da <a href="https://discord.gg/eTGHbKaQ4m">Spacelaxy</a>.
 
-Ela possui alguns botões que contudo, quando clicado não aciona nenhuma função.
+Ela possui alguns botões que contudo, quando clicados não acionam nenhuma função.
